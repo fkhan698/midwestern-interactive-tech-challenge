@@ -1,0 +1,25 @@
+.Header {
+  color: white;
+  font-size: 48px;
+  line-height: 20px;
+  margin: 2rem;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #debf79;
+}
+
+.paragraph {
+  color: white;
+  width: 80%;
+  margin: 3rem;
+}
+
+.span {
+  color: #debf79;
+}
+.span {
+  cursor: pointer;
+}
+

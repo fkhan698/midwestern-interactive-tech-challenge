@@ -1,3 +1,4 @@
+//DOTENV
 require("dotenv").config();
 // Dependencies
 const express = require("express");
@@ -18,7 +19,6 @@ mongoose.connect(process.env.DATABASE_URL, {
 const db = mongoose.connection;
 db.on("error", error => console.log(error));
 db.once("open", () => console.log("Connected to Mongoose"));
-
 app.use(express.json());
 
 //Use Routers
@@ -26,4 +26,4 @@ app.use("/content", contentRouter);
 app.use("/contact", contactRouter);
 
 //Listen at 3000
-app.listen(3000, () => console.log("Server started"));
+app.listen(5000, () => console.log("Server started"));
