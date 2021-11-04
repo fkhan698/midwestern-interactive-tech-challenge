@@ -1,4 +1,5 @@
 import React from "react";
+//Import constants
 import { cards } from "../../constants/constants.js";
 //Card component
 import Card from "./Card.js";

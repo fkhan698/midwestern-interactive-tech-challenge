@@ -9,4 +9,5 @@ router.get("/", contentController.getContent);
 //POST Route
 router.post("/", contentController.postContent);
 
+//Export Routes
 module.exports = router;

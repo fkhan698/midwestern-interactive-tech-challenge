@@ -2,8 +2,6 @@ import { useState } from "react";
 import styles from "../styles/Challenge.module.css";
 export default function Header() {
   //State variables
-
-  const [innerHTML, setInnerHTML] = useState([]);
   const [data, setData] = useState([]);
 
   const showArrayResults = () => {
@@ -21,7 +19,7 @@ export default function Header() {
     finalArray = finalArray.filter((item, index) => {
       return finalArray.indexOf(item) == index;
     });
-
+    //Set Data state variable to final Array
     setData(finalArray);
   };
 

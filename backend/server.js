@@ -9,8 +9,6 @@ const mongoose = require("mongoose");
 const contentRouter = require("./routes/content");
 const contactRouter = require("./routes/contact");
 
-//Body Parser
-
 //Mongoose Connection
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
@@ -25,5 +23,5 @@ app.use(express.json());
 app.use("/content", contentRouter);
 app.use("/contact", contactRouter);
 
-//Listen at 3000
+//Listen at 5000
 app.listen(5000, () => console.log("Server started"));
